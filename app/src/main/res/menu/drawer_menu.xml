@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dailymonitor"
+            android:icon="@drawable/ic_add_dailymonitor"
+            android:title="Daily Monitor" />
+        <item
+            android:id="@+id/nav_reminder1"
+            android:icon="@drawable/ic_reminder1"
+            android:title="Reminders" />
+        <item
+            android:id="@+id/nav_manageprofile"
+            android:icon="@drawable/ic_manageprofile"
+            android:title="Manage Profile" />
+
+    </group>
+
+    <item android:title="General settings">
+
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="Settings" />
+
+        </menu>
+
+
+
+        </item>
+
+    <item android:title="Diabetes Tips">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_diabetes_tips"
+                android:icon="@drawable/ic_black_bloodsugar"
+                android:title="Diabetes care tips" />
+
+        </menu>
+
+    </item>
+
+    <item android:title="Help">
+        <menu>
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_help_black"
+                android:title="Help">
+
+            </item>
+        </menu>
+    </item>
+
+
+
+
+
+</menu>

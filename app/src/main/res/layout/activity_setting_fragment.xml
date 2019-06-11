@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settingFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"
+        android:text="Click on Settings below"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Diabetic Target range"
+        android:id="@+id/target"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Normal blood sugar:90mg/dl-160mg/dl"
+        android:id="@+id/normal"
+        android:textStyle="bold"
+        android:textColor="@color/note_list_text"
+        android:layout_below="@+id/target"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="High blood sugar:Above 160mg/dl"
+        android:id="@+id/high"
+        android:textColor="@color/note_list_text"
+        android:textStyle="bold"
+        android:layout_below="@+id/normal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/note_list_text"
+        android:text="Low blood sugar:Below 90mg/dl"
+        android:layout_below="@+id/high"/>
+
+
+
+
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_forward_black"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        tools:ignore="VectorDrawableCompat" />
+
+
+
+
+</RelativeLayout>

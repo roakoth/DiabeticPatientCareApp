@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.diabeticpatientcareapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".medicineDetail"></activity>
+        <activity android:name=".blood_detailActivity" />
+        <activity android:name=".helpFragment" />
+        <activity android:name=".DetailActivity2" />
+        <activity android:name=".DetailActivity" />
+        <activity android:name=".meal_list" />
+        <activity android:name=".forum" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.diabeticpatientcareapp.Home" />
+        </activity>
+        <activity android:name=".settingFragment" />
+        <activity android:name=".AlarmMain" />
+        <activity android:name=".tipsFragment" />
+        <activity android:name=".descriptionActivity" />
+        <activity android:name=".diabetes_care_tips" />
+        <activity android:name=".medicine_list" />
+        <activity android:name=".bloodsugar_list" />
+        <activity
+            android:name=".meal_list"
+            tools:ignore="DuplicateActivity" />
+        <activity android:name=".profile_list" />
+        <activity android:name=".blood_detailActivity"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".DetailActivity2"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".DetailActivity"
+            tools:ignore="DuplicateActivity" />
+
+        <activity android:name=".exercise_list" />
+        <activity android:name=".listview_bloodsugar" />
+        <activity android:name=".meal" />
+        <activity android:name=".exercise" />
+        <activity android:name=".medicine" />
+        <activity android:name=".add_reminder" />
+        <activity android:name=".bloodsugar" />
+        <activity android:name=".Login" />
+        <activity
+            android:name=".Home"
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Declare  Alarm Broadcast receiver here -->
+        <receiver android:name=".AlarmReceiver" /> <!-- Declare  Alarm Notification Service here -->
+        <service android:name=".AlarmNotificationService" /> <!-- Declare  Alarm Sound Service here -->
+        <service android:name=".AlarmSoundService" />
+    </application>
+
+</manifest>
